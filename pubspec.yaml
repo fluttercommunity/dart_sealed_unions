@@ -1,0 +1,11 @@
+name: dart_sealed_unions
+author: Flutter Consortium Team <contact+gh@androidalliance.co.uk>
+description: Sealed Unions for Dart
+homepage: https://github.com/flutterconsortium/dart_sealed_unions
+version: 1.0.0
+
+environment:
+  sdk: '>=1.24.0 <2.0.0'
+
+dev_dependencies:
+  test: "^0.12.4+5"
