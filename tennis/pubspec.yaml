@@ -5,7 +5,7 @@ dependencies:
   dart_sealed_unions: ^1.0.0
 
 dependency_overrides:
-  dart_sealed_unions:
+  sealed_unions:
     path: ../
 
 environment:

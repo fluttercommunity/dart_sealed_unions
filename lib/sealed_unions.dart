@@ -1,5 +1,5 @@
 
-library dart_sealed_unions;
+library sealed_unions;
 
 export 'union_0.dart';
 export 'union_1.dart';
