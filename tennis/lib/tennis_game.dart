@@ -1,4 +1,4 @@
-import 'package:dart_sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/functions/func_function.dart';
 import 'package:tennis_game_example/advantage.dart';
 import 'package:tennis_game_example/deuce.dart';
 import 'package:tennis_game_example/game.dart';

@@ -1,9 +1,9 @@
-import 'package:dart_sealed_unions/generic/union_5_fifth.dart';
-import 'package:dart_sealed_unions/generic/union_5_first.dart';
-import 'package:dart_sealed_unions/generic/union_5_fourth.dart';
-import 'package:dart_sealed_unions/generic/union_5_second.dart';
-import 'package:dart_sealed_unions/generic/union_5_third.dart';
-import 'package:dart_sealed_unions/union_5.dart';
+import 'package:sealed_unions/generic/union_5_fifth.dart';
+import 'package:sealed_unions/generic/union_5_first.dart';
+import 'package:sealed_unions/generic/union_5_fourth.dart';
+import 'package:sealed_unions/generic/union_5_second.dart';
+import 'package:sealed_unions/generic/union_5_third.dart';
+import 'package:sealed_unions/union_5.dart';
 
 // Creator class for Union5
 abstract class Factory5<A, B, C, D, E> {

@@ -1,7 +1,7 @@
-import 'package:dart_sealed_unions/functions/func_action.dart';
-import 'package:dart_sealed_unions/functions/func_consumer.dart';
-import 'package:dart_sealed_unions/functions/func_function.dart';
-import 'package:dart_sealed_unions/union_1.dart';
+import 'package:sealed_unions/functions/func_action.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/union_1.dart';
 
 class Union1None<T> implements Union1<T> {
 

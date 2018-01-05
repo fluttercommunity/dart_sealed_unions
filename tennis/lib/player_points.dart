@@ -1,5 +1,5 @@
-import 'package:dart_sealed_unions/factories/quartet_factory.dart';
-import 'package:dart_sealed_unions/union_4.dart';
+import 'package:sealed_unions/factories/quartet_factory.dart';
+import 'package:sealed_unions/union_4.dart';
 import 'package:tennis_game_example/fifteen.dart';
 import 'package:tennis_game_example/forty.dart';
 import 'package:tennis_game_example/thirty.dart';

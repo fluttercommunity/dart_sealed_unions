@@ -1,12 +1,12 @@
-import 'package:dart_sealed_unions/generic/union_8_eighth.dart';
-import 'package:dart_sealed_unions/generic/union_8_fifth.dart';
-import 'package:dart_sealed_unions/generic/union_8_first.dart';
-import 'package:dart_sealed_unions/generic/union_8_fourth.dart';
-import 'package:dart_sealed_unions/generic/union_8_second.dart';
-import 'package:dart_sealed_unions/generic/union_8_seventh.dart';
-import 'package:dart_sealed_unions/generic/union_8_sixth.dart';
-import 'package:dart_sealed_unions/generic/union_8_third.dart';
-import 'package:dart_sealed_unions/union_8.dart';
+import 'package:sealed_unions/generic/union_8_eighth.dart';
+import 'package:sealed_unions/generic/union_8_fifth.dart';
+import 'package:sealed_unions/generic/union_8_first.dart';
+import 'package:sealed_unions/generic/union_8_fourth.dart';
+import 'package:sealed_unions/generic/union_8_second.dart';
+import 'package:sealed_unions/generic/union_8_seventh.dart';
+import 'package:sealed_unions/generic/union_8_sixth.dart';
+import 'package:sealed_unions/generic/union_8_third.dart';
+import 'package:sealed_unions/union_8.dart';
 
 // Creator class for Union8
 abstract class Factory8<A, B, C, D, E, F, G, H> {

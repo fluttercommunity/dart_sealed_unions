@@ -1,6 +1,6 @@
-import 'package:dart_sealed_unions/functions/func_consumer.dart';
-import 'package:dart_sealed_unions/functions/func_function.dart';
-import 'package:dart_sealed_unions/union_4.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/union_4.dart';
 
 class Union4First<A, B, C, D> implements Union4<A, B, C, D> {
 

@@ -1,15 +1,15 @@
-import 'package:dart_sealed_unions/factories/doublet_factory.dart';
-import 'package:dart_sealed_unions/factories/nonet_factory.dart';
-import 'package:dart_sealed_unions/factories/nullet_factory.dart';
-import 'package:dart_sealed_unions/factories/octet_factory.dart';
-import 'package:dart_sealed_unions/factories/quartet_factory.dart';
-import 'package:dart_sealed_unions/factories/quintet_factory.dart';
-import 'package:dart_sealed_unions/factories/septet_factory.dart';
-import 'package:dart_sealed_unions/factories/sextet_factory.dart';
-import 'package:dart_sealed_unions/factories/singlet_factory.dart';
-import 'package:dart_sealed_unions/factories/triplet_factory.dart';
-import 'package:dart_sealed_unions/functions/func_consumer.dart';
-import 'package:dart_sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/factories/doublet_factory.dart';
+import 'package:sealed_unions/factories/nonet_factory.dart';
+import 'package:sealed_unions/factories/nullet_factory.dart';
+import 'package:sealed_unions/factories/octet_factory.dart';
+import 'package:sealed_unions/factories/quartet_factory.dart';
+import 'package:sealed_unions/factories/quintet_factory.dart';
+import 'package:sealed_unions/factories/septet_factory.dart';
+import 'package:sealed_unions/factories/sextet_factory.dart';
+import 'package:sealed_unions/factories/singlet_factory.dart';
+import 'package:sealed_unions/factories/triplet_factory.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
 import 'package:test/test.dart' hide Func0, Func1, Func2, Func3, Func4, Func5, Func6;
 
 const String VALID = "a";

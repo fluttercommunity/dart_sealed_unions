@@ -1,6 +1,6 @@
-import 'package:dart_sealed_unions/generic/union_2_first.dart';
-import 'package:dart_sealed_unions/generic/union_2_second.dart';
-import 'package:dart_sealed_unions/union_2.dart';
+import 'package:sealed_unions/generic/union_2_first.dart';
+import 'package:sealed_unions/generic/union_2_second.dart';
+import 'package:sealed_unions/union_2.dart';
 
 // Creator class for Union2
 abstract class Factory2<T, U> {

@@ -1,13 +1,13 @@
-import 'package:dart_sealed_unions/generic/union_9_eighth.dart';
-import 'package:dart_sealed_unions/generic/union_9_fifth.dart';
-import 'package:dart_sealed_unions/generic/union_9_first.dart';
-import 'package:dart_sealed_unions/generic/union_9_fourth.dart';
-import 'package:dart_sealed_unions/generic/union_9_ninth.dart';
-import 'package:dart_sealed_unions/generic/union_9_second.dart';
-import 'package:dart_sealed_unions/generic/union_9_seventh.dart';
-import 'package:dart_sealed_unions/generic/union_9_sixth.dart';
-import 'package:dart_sealed_unions/generic/union_9_third.dart';
-import 'package:dart_sealed_unions/union_9.dart';
+import 'package:sealed_unions/generic/union_9_eighth.dart';
+import 'package:sealed_unions/generic/union_9_fifth.dart';
+import 'package:sealed_unions/generic/union_9_first.dart';
+import 'package:sealed_unions/generic/union_9_fourth.dart';
+import 'package:sealed_unions/generic/union_9_ninth.dart';
+import 'package:sealed_unions/generic/union_9_second.dart';
+import 'package:sealed_unions/generic/union_9_seventh.dart';
+import 'package:sealed_unions/generic/union_9_sixth.dart';
+import 'package:sealed_unions/generic/union_9_third.dart';
+import 'package:sealed_unions/union_9.dart';
 
 // Creator class for Union9
 abstract class Factory9<A, B, C, D, E, F, G, H, I> {

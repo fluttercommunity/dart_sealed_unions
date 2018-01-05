@@ -1,5 +1,5 @@
-import 'package:dart_sealed_unions/generic/union_0_first.dart';
-import 'package:dart_sealed_unions/union_0.dart';
+import 'package:sealed_unions/generic/union_0_first.dart';
+import 'package:sealed_unions/union_0.dart';
 
 // Creator class for Union0
 abstract class Factory0<Result> {

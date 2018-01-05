@@ -1,8 +1,8 @@
-import 'package:dart_sealed_unions/generic/union_4_first.dart';
-import 'package:dart_sealed_unions/generic/union_4_fourth.dart';
-import 'package:dart_sealed_unions/generic/union_4_second.dart';
-import 'package:dart_sealed_unions/generic/union_4_third.dart';
-import 'package:dart_sealed_unions/union_4.dart';
+import 'package:sealed_unions/generic/union_4_first.dart';
+import 'package:sealed_unions/generic/union_4_fourth.dart';
+import 'package:sealed_unions/generic/union_4_second.dart';
+import 'package:sealed_unions/generic/union_4_third.dart';
+import 'package:sealed_unions/union_4.dart';
 
 // Creator class for Union4
 abstract class Factory4<A, B, C, D> {

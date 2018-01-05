@@ -1,6 +1,6 @@
-import 'package:dart_sealed_unions/union_0.dart';
-import 'package:dart_sealed_unions/functions/func_consumer.dart';
-import 'package:dart_sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/union_0.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
 
 class Union0First<T> implements Union0<T> {
 

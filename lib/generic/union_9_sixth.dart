@@ -1,6 +1,6 @@
-import 'package:dart_sealed_unions/functions/func_consumer.dart';
-import 'package:dart_sealed_unions/functions/func_function.dart';
-import 'package:dart_sealed_unions/union_9.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/union_9.dart';
 
 class Union9Sixth<A, B, C, D, E, F, G, H, I> implements Union9<A, B, C, D, E, F, G, H, I> {
 

@@ -1,11 +1,11 @@
-import 'package:dart_sealed_unions/generic/union_7_fifth.dart';
-import 'package:dart_sealed_unions/generic/union_7_first.dart';
-import 'package:dart_sealed_unions/generic/union_7_fourth.dart';
-import 'package:dart_sealed_unions/generic/union_7_second.dart';
-import 'package:dart_sealed_unions/generic/union_7_seventh.dart';
-import 'package:dart_sealed_unions/generic/union_7_sixth.dart';
-import 'package:dart_sealed_unions/generic/union_7_third.dart';
-import 'package:dart_sealed_unions/union_7.dart';
+import 'package:sealed_unions/generic/union_7_fifth.dart';
+import 'package:sealed_unions/generic/union_7_first.dart';
+import 'package:sealed_unions/generic/union_7_fourth.dart';
+import 'package:sealed_unions/generic/union_7_second.dart';
+import 'package:sealed_unions/generic/union_7_seventh.dart';
+import 'package:sealed_unions/generic/union_7_sixth.dart';
+import 'package:sealed_unions/generic/union_7_third.dart';
+import 'package:sealed_unions/union_7.dart';
 
 // Creator class for Union7
 abstract class Factory7<A, B, C, D, E, F, G> {

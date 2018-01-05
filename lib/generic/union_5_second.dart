@@ -1,6 +1,6 @@
-import 'package:dart_sealed_unions/functions/func_consumer.dart';
-import 'package:dart_sealed_unions/functions/func_function.dart';
-import 'package:dart_sealed_unions/union_5.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
+import 'package:sealed_unions/union_5.dart';
 
 class Union5Second<A, B, C, D, E> implements Union5<A, B, C, D, E> {
 

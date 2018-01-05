@@ -1,7 +1,7 @@
-import 'package:dart_sealed_unions/generic/union_3_first.dart';
-import 'package:dart_sealed_unions/generic/union_3_second.dart';
-import 'package:dart_sealed_unions/generic/union_3_third.dart';
-import 'package:dart_sealed_unions/union_3.dart';
+import 'package:sealed_unions/generic/union_3_first.dart';
+import 'package:sealed_unions/generic/union_3_second.dart';
+import 'package:sealed_unions/generic/union_3_third.dart';
+import 'package:sealed_unions/union_3.dart';
 
 // Creator class for Union3
 abstract class Factory3<T, U, V> {
