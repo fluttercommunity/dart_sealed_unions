@@ -17,12 +17,19 @@ const List<String>VALID_ARRAY = const[
   VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID
 ];
 
+<<<<<<< HEAD
 final Func1<int, String> VALUE = ([a]) => VALID;
 final Func1<int, String> EMPTY = ([a]) => INVALID;
 final VoidFunc1<int> SUCCESS = ([i])=>{};
 final VoidFunc1<int> ERROR = ([i]) => new StateError("");
+=======
+final Func1<String, int> VALUE = ([a]) => VALID;
+final Func1<String, int> EMPTY = ([a]) => INVALID;
+final Consumer<int> SUCCESS = ([i]) => "Success";
+final Consumer<int> ERROR = ([i]) => new StateError("");
+>>>>>>> Ensure the factory tests are up-to-speed with the new analysis options
 
-main() {
+void main() {
 
   group('Union Factories => test join ', () {
     Nullet<int> nullet = new Nullet();
