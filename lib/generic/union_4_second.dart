@@ -1,44 +1,42 @@
-
-import 'package:func/func.dart';
+import 'package:sealed_unions/functions/func_consumer.dart';
+import 'package:sealed_unions/functions/func_function.dart';
 import 'package:sealed_unions/union_4.dart';
 
 class Union4Second<A, B, C, D> implements Union4<A, B, C, D> {
-
   final B _value;
 
   Union4Second(this._value);
 
   @override
-  void continued(VoidFunc1<A> continuationFirst, VoidFunc1<B> continuationSecond,
-      VoidFunc1<C> continuationThird, VoidFunc1<D> continuationFourth) {
-    try {
-      continuationSecond(_value);
-    } on Exception catch (e) {
-      rethrow;
-    }
+  void continued(
+    Consumer<A> continuationFirst,
+    Consumer<B> continuationSecond,
+    Consumer<C> continuationThird,
+    Consumer<D> continuationFourth,
+  ) {
+    continuationSecond(_value);
   }
 
   @override
-  R join<R>(Func1<A, R> mapFirst, Func1<B, R> mapSecond, Func1<C, R> mapThird,
-      Func1<D, R> mapFourth) {
-    try {
-      return mapSecond(_value);
-    } on Exception catch (e) {
-      rethrow;
-    }
+  R join<R>(
+    Func1<R, A> mapFirst,
+    Func1<R, B> mapSecond,
+    Func1<R, C> mapThird,
+    Func1<R, D> mapFourth,
+  ) {
+    return mapSecond(_value);
   }
 
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is Union4Second &&
-              runtimeType == other.runtimeType &&
-              _value == other._value;
+      other is Union4Second &&
+          runtimeType == other.runtimeType &&
+          _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;
 
   @override
   String toString() => _value.toString();
-
 }
