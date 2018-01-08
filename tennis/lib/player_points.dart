@@ -44,10 +44,10 @@ abstract class PlayerPoints {
 
   static String getString(PlayerPoints playerPoints) {
     return playerPoints.getPlayerPoints().join(
-          ([zero]) => "0",
-          ([fifteen]) => "15",
-          ([thirty]) => "30",
-          ([forty]) => "40",
+          (zero) => "0",
+          (fifteen) => "15",
+          (thirty) => "30",
+          (forty) => "40",
     );
   }
 

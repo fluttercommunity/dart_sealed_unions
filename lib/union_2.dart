@@ -1,9 +1,10 @@
-import 'functions/func_consumer.dart';
-import 'functions/func_function.dart';
+import 'package:func/func.dart';
+
+
 
 abstract class Union2<First, Second> {
-  void continued(Consumer<First> continuationFirst,
-      Consumer<Second> continuationSecond);
+  void continued(VoidFunc1<First> continuationFirst,
+      VoidFunc1<Second> continuationSecond);
 
-  R join<R>(Func1<R, First> mapFirst, Func1<R, Second> mapSecond);
+  R join<R>(Func1<First, R> mapFirst, Func1<Second, R> mapSecond);
 }

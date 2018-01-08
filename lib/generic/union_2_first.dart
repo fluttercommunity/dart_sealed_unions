@@ -1,5 +1,5 @@
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+
+import 'package:func/func.dart';
 import 'package:sealed_unions/union_2.dart';
 
 class Union2First<T, U> implements Union2<T, U> {
@@ -9,7 +9,7 @@ class Union2First<T, U> implements Union2<T, U> {
   Union2First(this._value);
 
   @override
-  void continued(Consumer<T> continuationFirst, Consumer<U> continuationSecond) {
+  void continued(VoidFunc1<T> continuationFirst, VoidFunc1<U> continuationSecond) {
     try {
       continuationFirst(_value);
     } on Exception catch (e) {
@@ -18,7 +18,7 @@ class Union2First<T, U> implements Union2<T, U> {
   }
 
   @override
-  R join<R>(Func1<R, T> mapFirst, Func1<R, U> mapSecond) {
+  R join<R>(Func1<T, R> mapFirst, Func1<U, R> mapSecond) {
     try {
       return mapFirst(_value);
     } on Exception catch (e) {

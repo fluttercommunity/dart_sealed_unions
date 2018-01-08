@@ -1,5 +1,5 @@
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+
+import 'package:func/func.dart';
 import 'package:sealed_unions/union_8.dart';
 
 class Union8Sixth<A, B, C, D, E, F, G, H> implements Union8<A, B, C, D, E, F, G, H> {
@@ -9,10 +9,10 @@ class Union8Sixth<A, B, C, D, E, F, G, H> implements Union8<A, B, C, D, E, F, G,
   Union8Sixth(this._value);
 
   @override
-  void continued(Consumer<A> continuationFirst, Consumer<B> continuationSecond,
-      Consumer<C> continuationThird, Consumer<D> continuationFourth,
-      Consumer<E> continuationFifth, Consumer<F> continuationSixth,
-      Consumer<G> continuationSeventh, Consumer<H> continuationEighth) {
+  void continued(VoidFunc1<A> continuationFirst, VoidFunc1<B> continuationSecond,
+      VoidFunc1<C> continuationThird, VoidFunc1<D> continuationFourth,
+      VoidFunc1<E> continuationFifth, VoidFunc1<F> continuationSixth,
+      VoidFunc1<G> continuationSeventh, VoidFunc1<H> continuationEighth) {
     try {
       continuationSixth(_value);
     } on Exception catch (e) {
@@ -21,9 +21,9 @@ class Union8Sixth<A, B, C, D, E, F, G, H> implements Union8<A, B, C, D, E, F, G,
   }
 
   @override
-  R join<R>(Func1<R, A> mapFirst, Func1<R, B> mapSecond, Func1<R, C> mapThird,
-      Func1<R, D> mapFourth, Func1<R, E> mapFifth, Func1<R, F> mapSixth,
-      Func1<R, G> mapSeventh, Func1<R, H> mapEighth) {
+  R join<R>(Func1<A, R> mapFirst, Func1<B, R> mapSecond, Func1<C, R> mapThird,
+      Func1<D, R> mapFourth, Func1<E, R> mapFifth, Func1<F, R> mapSixth,
+      Func1<G, R> mapSeventh, Func1<H, R> mapEighth) {
     try {
       return mapSixth(_value);
     } on Exception catch (e) {

@@ -1,5 +1,5 @@
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+
+import 'package:func/func.dart';
 import 'package:sealed_unions/union_4.dart';
 
 class Union4Fourth<A, B, C, D> implements Union4<A, B, C, D> {
@@ -9,8 +9,8 @@ class Union4Fourth<A, B, C, D> implements Union4<A, B, C, D> {
   Union4Fourth(this._value);
 
   @override
-  void continued(Consumer<A> continuationFirst, Consumer<B> continuationSecond,
-      Consumer<C> continuationThird, Consumer<D> continuationFourth) {
+  void continued(VoidFunc1<A> continuationFirst, VoidFunc1<B> continuationSecond,
+      VoidFunc1<C> continuationThird, VoidFunc1<D> continuationFourth) {
     try {
       continuationFourth(_value);
     } on Exception catch (e) {
@@ -19,8 +19,8 @@ class Union4Fourth<A, B, C, D> implements Union4<A, B, C, D> {
   }
 
   @override
-  R join<R>(Func1<R, A> mapFirst, Func1<R, B> mapSecond, Func1<R, C> mapThird,
-      Func1<R, D> mapFourth) {
+  R join<R>(Func1<A, R> mapFirst, Func1<B, R> mapSecond, Func1<C, R> mapThird,
+      Func1<D, R> mapFourth) {
     try {
       return mapFourth(_value);
     } on Exception catch (e) {

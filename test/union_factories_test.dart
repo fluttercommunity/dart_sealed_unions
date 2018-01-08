@@ -8,8 +8,7 @@ import 'package:sealed_unions/factories/septet_factory.dart';
 import 'package:sealed_unions/factories/sextet_factory.dart';
 import 'package:sealed_unions/factories/singlet_factory.dart';
 import 'package:sealed_unions/factories/triplet_factory.dart';
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+import 'package:func/func.dart';
 import 'package:test/test.dart' hide Func0, Func1, Func2, Func3, Func4, Func5, Func6;
 
 const String VALID = "a";
@@ -18,10 +17,10 @@ const List<String>VALID_ARRAY = const[
   VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID
 ];
 
-final Func1<String, int> VALUE = ([a]) => VALID;
-final Func1<String, int> EMPTY = ([a]) => INVALID;
-final Consumer<int> SUCCESS = ([i])=>{};
-final Consumer<int> ERROR = ([i]) => new StateError("");
+final Func1<int, String> VALUE = ([a]) => VALID;
+final Func1<int, String> EMPTY = ([a]) => INVALID;
+final VoidFunc1<int> SUCCESS = ([i])=>{};
+final VoidFunc1<int> ERROR = ([i]) => new StateError("");
 
 main() {
 

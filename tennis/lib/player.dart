@@ -23,8 +23,8 @@ abstract class Player {
 
   static String getString(Player player) =>
       player.getPlayer().join(
-              ([playerOne]) => "Player 1",
-              ([playerTwo]) => "Player 2"
+              (playerOne) => "Player 1",
+              (playerTwo) => "Player 2"
       );
 
   Union2<PlayerOne, PlayerTwo> getPlayer();

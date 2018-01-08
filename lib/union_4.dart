@@ -1,10 +1,10 @@
-import 'functions/func_consumer.dart';
-import 'functions/func_function.dart';
+
+import 'package:func/func.dart';
 
 abstract class Union4<First, Second, Third, Fourth> {
-  void continued(Consumer<First> continuationFirst, Consumer<Second> continuationSecond,
-      Consumer<Third> continuationThird, Consumer<Fourth> continuationFourth);
+  void continued(VoidFunc1<First> continuationFirst, VoidFunc1<Second> continuationSecond,
+      VoidFunc1<Third> continuationThird, VoidFunc1<Fourth> continuationFourth);
 
-  R join<R>(Func1<R, First> mapFirst, Func1<R, Second> mapSecond,
-      Func1<R, Third> mapThird, Func1<R, Fourth> mapFourth);
+  R join<R>(Func1<First, R> mapFirst, Func1<Second, R> mapSecond,
+      Func1<Third, R> mapThird, Func1<Fourth, R> mapFourth);
 }

@@ -1,6 +1,6 @@
 import 'package:sealed_unions/union_0.dart';
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+
+import 'package:func/func.dart';
 
 class Union0First<T> implements Union0<T> {
 
@@ -9,7 +9,7 @@ class Union0First<T> implements Union0<T> {
   Union0First(this._value);
 
   @override
-  void continued(Consumer<T> continuationFirst) {
+  void continued(VoidFunc1<T> continuationFirst) {
     try {
       continuationFirst(_value);
     } on Exception catch (e) {
@@ -18,7 +18,7 @@ class Union0First<T> implements Union0<T> {
   }
 
   @override
-  R join<R>(Func1<R, T> mapFirst) {
+  R join<R>(Func1<T, R> mapFirst) {
     try {
       return mapFirst(_value);
     } on Exception catch (e) {

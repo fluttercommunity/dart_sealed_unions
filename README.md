@@ -17,7 +17,7 @@ Sealed classes are available in Kotlin [Sealed Classes](https://kotlinlang.org/d
 
 ```yaml
 dependencies:
-  sealed_unions: "^1.0.0"
+  sealed_unions: "^1.1.0"
 ```
 You can install packages from the command line:
 

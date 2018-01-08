@@ -1,5 +1,5 @@
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+
+import 'package:func/func.dart';
 import 'package:sealed_unions/union_6.dart';
 
 class Union6Third<A, B, C, D, E, F> implements Union6<A, B, C, D, E, F> {
@@ -9,9 +9,9 @@ class Union6Third<A, B, C, D, E, F> implements Union6<A, B, C, D, E, F> {
   Union6Third(this._value);
 
   @override
-  void continued(Consumer<A> continuationFirst, Consumer<B> continuationSecond,
-      Consumer<C> continuationThird, Consumer<D> continuationFourth,
-      Consumer<E> continuationFifth, Consumer<F> continuationSixth) {
+  void continued(VoidFunc1<A> continuationFirst, VoidFunc1<B> continuationSecond,
+      VoidFunc1<C> continuationThird, VoidFunc1<D> continuationFourth,
+      VoidFunc1<E> continuationFifth, VoidFunc1<F> continuationSixth) {
     try {
       continuationThird(_value);
     } on Exception catch (e) {
@@ -20,8 +20,8 @@ class Union6Third<A, B, C, D, E, F> implements Union6<A, B, C, D, E, F> {
   }
 
   @override
-  R join<R>(Func1<R, A> mapFirst, Func1<R, B> mapSecond, Func1<R, C> mapThird,
-      Func1<R, D> mapFourth, Func1<R, E> mapFifth, Func1<R, F> mapSixth) {
+  R join<R>(Func1<A, R> mapFirst, Func1<B, R> mapSecond, Func1<C, R> mapThird,
+      Func1<D, R> mapFourth, Func1<E, R> mapFifth, Func1<F, R> mapSixth) {
     try {
       return mapThird(_value);
     } on Exception catch (e) {
