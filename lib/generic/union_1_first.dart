@@ -1,6 +1,5 @@
-import 'package:sealed_unions/functions/func_action.dart';
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+import 'package:func/func.dart';
+
 import 'package:sealed_unions/union_1.dart';
 
 class Union1First<T> implements Union1<T> {
@@ -9,12 +8,12 @@ class Union1First<T> implements Union1<T> {
   Union1First(this._value);
 
   @override
-  void continued(Consumer<T> continuationFirst, Action continuationNone) {
+  void continued(VoidFunc1<T> continuationFirst, VoidFunc0 continuationNone) {
     continuationFirst(_value);
   }
 
   @override
-  R join<R>(Func1<R, T> mapFirst, Func0<R> mapNone) => mapFirst(_value);
+  R join<R>(Func1<T, R> mapFirst, Func0<R> mapNone) => mapFirst(_value);
 
   @override
   bool operator ==(Object other) =>

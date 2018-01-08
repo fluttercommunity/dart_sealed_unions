@@ -17,17 +17,10 @@ const List<String>VALID_ARRAY = const[
   VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID, VALID
 ];
 
-<<<<<<< HEAD
-final Func1<int, String> VALUE = ([a]) => VALID;
-final Func1<int, String> EMPTY = ([a]) => INVALID;
-final VoidFunc1<int> SUCCESS = ([i])=>{};
-final VoidFunc1<int> ERROR = ([i]) => new StateError("");
-=======
-final Func1<String, int> VALUE = ([a]) => VALID;
-final Func1<String, int> EMPTY = ([a]) => INVALID;
-final Consumer<int> SUCCESS = ([i]) => "Success";
-final Consumer<int> ERROR = ([i]) => new StateError("");
->>>>>>> Ensure the factory tests are up-to-speed with the new analysis options
+final Func1<int, String> VALUE = (a) => VALID;
+final Func1<int, String> EMPTY = (a) => INVALID;
+final VoidFunc1<int> SUCCESS = (i) => "Success";
+final VoidFunc1<int> ERROR = (i) => new StateError("");
 
 void main() {
 
@@ -60,7 +53,7 @@ void main() {
     });
 
     join1 = singlet.none().join(EMPTY, ()=>VALID);
-    join2 = doublet.second(0).join(([a])=>INVALID, ([a])=>VALID);
+    join2 = doublet.second(0).join((a)=>INVALID, (a)=>VALID);
     join3 = triplet.second(0).join(EMPTY, VALUE, EMPTY);
     join4 = quartet.second(0).join(EMPTY, VALUE, EMPTY, EMPTY);
     join5 = quintet.second(0).join(EMPTY, VALUE, EMPTY, EMPTY, EMPTY);

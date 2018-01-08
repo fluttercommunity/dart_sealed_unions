@@ -1,5 +1,4 @@
-import 'package:sealed_unions/functions/func_consumer.dart';
-import 'package:sealed_unions/functions/func_function.dart';
+import 'package:func/func.dart';
 import 'package:sealed_unions/union_5.dart';
 
 class Union5First<A, B, C, D, E> implements Union5<A, B, C, D, E> {
@@ -9,22 +8,22 @@ class Union5First<A, B, C, D, E> implements Union5<A, B, C, D, E> {
 
   @override
   void continued(
-    Consumer<A> continuationFirst,
-    Consumer<B> continuationSecond,
-    Consumer<C> continuationThird,
-    Consumer<D> continuationFourth,
-    Consumer<E> continuationFifth,
+    VoidFunc1<A> continuationFirst,
+    VoidFunc1<B> continuationSecond,
+    VoidFunc1<C> continuationThird,
+    VoidFunc1<D> continuationFourth,
+    VoidFunc1<E> continuationFifth,
   ) {
     continuationFirst(_value);
   }
 
   @override
   R join<R>(
-    Func1<R, A> mapFirst,
-    Func1<R, B> mapSecond,
-    Func1<R, C> mapThird,
-    Func1<R, D> mapFourth,
-    Func1<R, E> mapFifth,
+    Func1<A, R> mapFirst,
+    Func1<B, R> mapSecond,
+    Func1<C, R> mapThird,
+    Func1<D, R> mapFourth,
+    Func1<E, R> mapFifth,
   ) {
     return mapFirst(_value);
   }
