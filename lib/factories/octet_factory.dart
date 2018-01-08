@@ -29,40 +29,40 @@ abstract class Factory8<A, B, C, D, E, F, G, H> {
 
 }
 
-class Octet<A, B, C, D, E, F, G, H> implements Factory8 {
+class Octet<A, B, C, D, E, F, G, H> implements Factory8<A, B, C, D, E, F, G, H> {
 
   const Octet();
 
   @override
-  Union8<A, B, C, D, E, F, G, H> first(first) =>
+  Union8<A, B, C, D, E, F, G, H> first(A first) =>
       new Union8First<A, B, C, D, E, F, G, H>(first);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> second(second) =>
+  Union8<A, B, C, D, E, F, G, H> second(B second) =>
       new Union8Second<A, B, C, D, E, F, G, H>(second);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> third(third) =>
+  Union8<A, B, C, D, E, F, G, H> third(C third) =>
       new Union8Third<A, B, C, D, E, F, G, H>(third);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> fourth(fourth) =>
+  Union8<A, B, C, D, E, F, G, H> fourth(D fourth) =>
       new Union8Fourth<A, B, C, D, E, F, G, H>(fourth);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> fifth(fifth) =>
+  Union8<A, B, C, D, E, F, G, H> fifth(E fifth) =>
       new Union8Fifth<A, B, C, D, E, F, G, H>(fifth);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> sixth(sixth) =>
+  Union8<A, B, C, D, E, F, G, H> sixth(F sixth) =>
       new Union8Sixth<A, B, C, D, E, F, G, H>(sixth);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> seventh(seventh) =>
+  Union8<A, B, C, D, E, F, G, H> seventh(G seventh) =>
       new Union8Seventh<A, B, C, D, E, F, G, H>(seventh);
 
   @override
-  Union8<A, B, C, D, E, F, G, H> eighth(eighth) =>
+  Union8<A, B, C, D, E, F, G, H> eighth(H eighth) =>
       new Union8Eighth<A, B, C, D, E, F, G, H>(eighth);
 
 }

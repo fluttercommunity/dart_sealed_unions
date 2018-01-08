@@ -14,7 +14,7 @@ abstract class Factory3<T, U, V> {
 
 }
 
-class Triplet<T, U, V> implements Factory3 {
+class Triplet<T, U, V> implements Factory3<T, U, V> {
 
   const Triplet();
 
