@@ -28,27 +28,27 @@ class Sextet<A, B, C, D, E, F> implements Factory6<A, B, C, D, E, F> {
   Sextet();
 
   @override
-  Union6<A, B, C, D, E, F> first(first) =>
+  Union6<A, B, C, D, E, F> first(A first) =>
       new Union6First<A, B, C, D, E, F>(first);
 
   @override
-  Union6<A, B, C, D, E, F> second(second) =>
+  Union6<A, B, C, D, E, F> second(B second) =>
       new Union6Second<A, B, C, D, E, F>(second);
 
   @override
-  Union6<A, B, C, D, E, F> third(third) =>
+  Union6<A, B, C, D, E, F> third(C third) =>
       new Union6Third<A, B, C, D, E, F>(third);
 
   @override
-  Union6<A, B, C, D, E, F> fourth(fourth) =>
+  Union6<A, B, C, D, E, F> fourth(D fourth) =>
       new Union6Fourth<A, B, C, D, E, F>(fourth);
 
   @override
-  Union6<A, B, C, D, E, F> fifth(fifth) =>
+  Union6<A, B, C, D, E, F> fifth(E fifth) =>
       new Union6Fifth<A, B, C, D, E, F>(fifth);
 
   @override
-  Union6<A, B, C, D, E, F> sixth(sixth) =>
+  Union6<A, B, C, D, E, F> sixth(F sixth) =>
       new Union6Sixth<A, B, C, D, E, F>(sixth);
 
 }
