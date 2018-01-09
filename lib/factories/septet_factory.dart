@@ -26,36 +26,36 @@ abstract class Factory7<A, B, C, D, E, F, G> {
 
 }
 
-class Septet<A, B, C, D, E, F, G> implements Factory7 {
+class Septet<A, B, C, D, E, F, G> implements Factory7<A, B, C, D, E, F, G> {
 
   const Septet();
 
   @override
-  Union7<A, B, C, D, E, F, G> first(first) =>
+  Union7<A, B, C, D, E, F, G> first(A first) =>
       new Union7First<A, B, C, D, E, F, G>(first);
 
   @override
-  Union7<A, B, C, D, E, F, G> second(second) =>
+  Union7<A, B, C, D, E, F, G> second(B second) =>
       new Union7Second<A, B, C, D, E, F, G>(second);
 
   @override
-  Union7<A, B, C, D, E, F, G> third(third) =>
+  Union7<A, B, C, D, E, F, G> third(C third) =>
       new Union7Third<A, B, C, D, E, F, G>(third);
 
   @override
-  Union7<A, B, C, D, E, F, G> fourth(fourth) =>
+  Union7<A, B, C, D, E, F, G> fourth(D fourth) =>
       new Union7Fourth<A, B, C, D, E, F, G>(fourth);
 
   @override
-  Union7<A, B, C, D, E, F, G> fifth(fifth) =>
+  Union7<A, B, C, D, E, F, G> fifth(E fifth) =>
       new Union7Fifth<A, B, C, D, E, F, G>(fifth);
 
   @override
-  Union7<A, B, C, D, E, F, G> sixth(sixth) =>
+  Union7<A, B, C, D, E, F, G> sixth(F sixth) =>
       new Union7Sixth<A, B, C, D, E, F, G>(sixth);
 
   @override
-  Union7<A, B, C, D, E, F, G> seventh(seventh) =>
+  Union7<A, B, C, D, E, F, G> seventh(G seventh) =>
       new Union7Seventh<A, B, C, D, E, F, G>(seventh);
 
 }

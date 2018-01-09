@@ -11,14 +11,14 @@ abstract class Factory2<T, U> {
 
 }
 
-class Doublet<T, U> implements Factory2 {
+class Doublet<T, U> implements Factory2<T, U> {
 
   const Doublet();
 
   @override
-  Union2<T, U> first(first) => new Union2First<T, U>(first);
+  Union2<T, U> first(T first) => new Union2First<T, U>(first);
 
   @override
-  Union2<T, U> second(second) => new Union2Second<T, U>(second);
+  Union2<T, U> second(U second) => new Union2Second<T, U>(second);
 
 }
