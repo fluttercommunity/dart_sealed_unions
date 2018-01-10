@@ -12,6 +12,11 @@ Sealed classes are available in languages like [Kotlin](https://kotlinlang.org/d
 
 We highly recommend reading the [Rationale](https://github.com/pakoito/JavaSealedUnions/blob/master/README.md#rationale) for the readme of [JavaSealedUnions](https://github.com/pakoito/JavaSealedUnions/blob/master/README.md) for an indepth explanation of the idea and application of the library.
 
+## MOTIVATION
+This library was heavily inspired by [RxEither](https://github.com/eleventigers/rxeither) and the wonderful [Domain Driven Design](https://fsharpforfunandprofit.com/ddd/) (DDD) talk by [Scott Wlaschin](https://github.com/swlaschin).
+This video by Scott Wlaschin will inspire you on how to apply DDD:
+[Domain Driven Design, F# and Types](https://skillsmatter.com/skillscasts/4971-domain-driven-design-with-scott-wlaschin)
+
 ## USAGE
 The following example project: [MVI Sealed Unions](https://github.com/flutterconsortium/mvi_sealed_unions) demonstrates the library application in a Flutter app.
 
