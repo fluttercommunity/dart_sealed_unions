@@ -1,4 +1,4 @@
-## 1.1.0
+## 2.0.0
 
 * Removed `functions` package in favour of [func](https://pub.dartlang.org/packages/func)
 

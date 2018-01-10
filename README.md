@@ -21,7 +21,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sealed_unions: "^1.1.0"
+  sealed_unions: "^2.0.0"
 ```
 
 #### 2.Install it
