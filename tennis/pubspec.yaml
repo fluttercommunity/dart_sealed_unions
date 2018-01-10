@@ -2,7 +2,7 @@ name: tennis_game_example
 description: A [Tennis kata](http://www.codingdojo.org/cgi-bin/index.pl?KataTennis) example.
 
 dependencies:
-  sealed_unions: ^1.0.0
+  sealed_unions: ^2.0.0
 
 dependency_overrides:
   sealed_unions:

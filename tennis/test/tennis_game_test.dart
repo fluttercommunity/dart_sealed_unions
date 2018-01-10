@@ -8,7 +8,7 @@ import 'package:test/test.dart'
     hide Func0, Func1, Func2, Func3, Func4, Func5, Func6;
 
 
-main() {
+void main() {
   group('Tennis game test', ()  {
 
     /* start */
