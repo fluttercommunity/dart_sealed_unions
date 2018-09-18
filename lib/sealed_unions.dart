@@ -1,16 +1,5 @@
-
 library sealed_unions;
 
-export 'union_0.dart';
-export 'union_1.dart';
-export 'union_2.dart';
-export 'union_3.dart';
-export 'union_4.dart';
-export 'union_5.dart';
-export 'union_6.dart';
-export 'union_7.dart';
-export 'union_8.dart';
-export 'union_9.dart';
 export 'factories/doublet_factory.dart';
 export 'factories/nonet_factory.dart';
 export 'factories/nullet_factory.dart';
@@ -78,3 +67,13 @@ export 'implementations/union_6_impl.dart';
 export 'implementations/union_7_impl.dart';
 export 'implementations/union_8_impl.dart';
 export 'implementations/union_9_impl.dart';
+export 'union_0.dart';
+export 'union_1.dart';
+export 'union_2.dart';
+export 'union_3.dart';
+export 'union_4.dart';
+export 'union_5.dart';
+export 'union_6.dart';
+export 'union_7.dart';
+export 'union_8.dart';
+export 'union_9.dart';

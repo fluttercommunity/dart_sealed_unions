@@ -8,7 +8,6 @@ import 'package:sealed_unions/union_6.dart';
 
 // Creator class for Union6
 abstract class Factory6<A, B, C, D, E, F> {
-
   Union6<A, B, C, D, E, F> first(A first);
 
   Union6<A, B, C, D, E, F> second(B second);
@@ -20,11 +19,9 @@ abstract class Factory6<A, B, C, D, E, F> {
   Union6<A, B, C, D, E, F> fifth(E fifth);
 
   Union6<A, B, C, D, E, F> sixth(F sixth);
-
 }
 
 class Sextet<A, B, C, D, E, F> implements Factory6<A, B, C, D, E, F> {
-
   Sextet();
 
   @override
@@ -50,5 +47,4 @@ class Sextet<A, B, C, D, E, F> implements Factory6<A, B, C, D, E, F> {
   @override
   Union6<A, B, C, D, E, F> sixth(F sixth) =>
       new Union6Sixth<A, B, C, D, E, F>(sixth);
-
 }

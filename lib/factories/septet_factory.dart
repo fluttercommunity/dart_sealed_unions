@@ -9,7 +9,6 @@ import 'package:sealed_unions/union_7.dart';
 
 // Creator class for Union7
 abstract class Factory7<A, B, C, D, E, F, G> {
-
   Union7<A, B, C, D, E, F, G> first(A first);
 
   Union7<A, B, C, D, E, F, G> second(B second);
@@ -23,11 +22,9 @@ abstract class Factory7<A, B, C, D, E, F, G> {
   Union7<A, B, C, D, E, F, G> sixth(F sixth);
 
   Union7<A, B, C, D, E, F, G> seventh(G seventh);
-
 }
 
 class Septet<A, B, C, D, E, F, G> implements Factory7<A, B, C, D, E, F, G> {
-
   const Septet();
 
   @override
@@ -57,5 +54,4 @@ class Septet<A, B, C, D, E, F, G> implements Factory7<A, B, C, D, E, F, G> {
   @override
   Union7<A, B, C, D, E, F, G> seventh(G seventh) =>
       new Union7Seventh<A, B, C, D, E, F, G>(seventh);
-
 }

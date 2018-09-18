@@ -1,4 +1,3 @@
-import 'package:func/func.dart';
 import 'package:sealed_unions/union_2.dart';
 
 class Union2Second<T, U> implements Union2<T, U> {
@@ -8,14 +7,15 @@ class Union2Second<T, U> implements Union2<T, U> {
 
   @override
   void continued(
-    VoidFunc1<T> continuationFirst,
-    VoidFunc1<U> continuationSecond,
+    Function(T) continuationFirst,
+    Function(U) continuationSecond,
   ) {
     continuationSecond(_value);
   }
 
   @override
-  R join<R>(Func1<T, R> mapFirst, Func1<U, R> mapSecond) => mapSecond(_value);
+  R join<R>(R Function(T) mapFirst, R Function(U) mapSecond) =>
+      mapSecond(_value);
 
   @override
   bool operator ==(Object other) =>

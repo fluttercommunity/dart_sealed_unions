@@ -1,4 +1,3 @@
-import 'package:func/func.dart';
 import 'package:sealed_unions/union_8.dart';
 
 class Union8Seventh<A, B, C, D, E, F, G, H>
@@ -9,28 +8,28 @@ class Union8Seventh<A, B, C, D, E, F, G, H>
 
   @override
   void continued(
-    VoidFunc1<A> continuationFirst,
-    VoidFunc1<B> continuationSecond,
-    VoidFunc1<C> continuationThird,
-    VoidFunc1<D> continuationFourth,
-    VoidFunc1<E> continuationFifth,
-    VoidFunc1<F> continuationSixth,
-    VoidFunc1<G> continuationSeventh,
-    VoidFunc1<H> continuationEighth,
+    Function(A) continuationFirst,
+    Function(B) continuationSecond,
+    Function(C) continuationThird,
+    Function(D) continuationFourth,
+    Function(E) continuationFifth,
+    Function(F) continuationSixth,
+    Function(G) continuationSeventh,
+    Function(H) continuationEighth,
   ) {
     continuationSeventh(_value);
   }
 
   @override
   R join<R>(
-    Func1<A, R> mapFirst,
-    Func1<B, R> mapSecond,
-    Func1<C, R> mapThird,
-    Func1<D, R> mapFourth,
-    Func1<E, R> mapFifth,
-    Func1<F, R> mapSixth,
-    Func1<G, R> mapSeventh,
-    Func1<H, R> mapEighth,
+    R Function(A) mapFirst,
+    R Function(B) mapSecond,
+    R Function(C) mapThird,
+    R Function(D) mapFourth,
+    R Function(E) mapFifth,
+    R Function(F) mapSixth,
+    R Function(G) mapSeventh,
+    R Function(H) mapEighth,
   ) {
     return mapSeventh(_value);
   }

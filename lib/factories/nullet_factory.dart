@@ -11,10 +11,8 @@ abstract class Factory0<Result> {
 }
 
 class Nullet<Result> implements Factory0<Result> {
-
   const Nullet();
 
   @override
   Union0<Result> first(Result result) => new Union0First<Result>(result);
-
 }

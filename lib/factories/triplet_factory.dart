@@ -5,17 +5,14 @@ import 'package:sealed_unions/union_3.dart';
 
 // Creator class for Union3
 abstract class Factory3<T, U, V> {
-
   Union3<T, U, V> first(T first);
 
   Union3<T, U, V> second(U second);
 
   Union3<T, U, V> third(V third);
-
 }
 
 class Triplet<T, U, V> implements Factory3<T, U, V> {
-
   const Triplet();
 
   @override
@@ -26,5 +23,4 @@ class Triplet<T, U, V> implements Factory3<T, U, V> {
 
   @override
   Union3<T, U, V> third(V third) => new Union3Third<T, U, V>(third);
-
 }

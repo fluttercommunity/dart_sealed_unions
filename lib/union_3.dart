@@ -1,15 +1,13 @@
-import 'package:func/func.dart';
-
 abstract class Union3<First, Second, Third> {
   void continued(
-    VoidFunc1<First> continuationFirst,
-    VoidFunc1<Second> continuationSecond,
-    VoidFunc1<Third> continuationThird,
+    Function(First) continuationFirst,
+    Function(Second) continuationSecond,
+    Function(Third) continuationThird,
   );
 
   R join<R>(
-    Func1<First, R> mapFirst,
-    Func1<Second, R> mapSecond,
-    Func1<Third, R> mapThird,
+    R Function(First) mapFirst,
+    R Function(Second) mapSecond,
+    R Function(Third) mapThird,
   );
 }

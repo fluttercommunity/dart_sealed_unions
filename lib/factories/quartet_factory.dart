@@ -6,7 +6,6 @@ import 'package:sealed_unions/union_4.dart';
 
 // Creator class for Union4
 abstract class Factory4<A, B, C, D> {
-
   Union4<A, B, C, D> first(A first);
 
   Union4<A, B, C, D> second(B second);
@@ -14,11 +13,9 @@ abstract class Factory4<A, B, C, D> {
   Union4<A, B, C, D> third(C third);
 
   Union4<A, B, C, D> fourth(D fourth);
-
 }
 
 class Quartet<A, B, C, D> implements Factory4<A, B, C, D> {
-
   const Quartet();
 
   @override
@@ -32,5 +29,4 @@ class Quartet<A, B, C, D> implements Factory4<A, B, C, D> {
 
   @override
   Union4<A, B, C, D> fourth(D fourth) => new Union4Fourth<A, B, C, D>(fourth);
-
 }

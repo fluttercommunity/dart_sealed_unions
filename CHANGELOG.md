@@ -1,3 +1,8 @@
+## 3.0.0
+
+* Support for Dart 2
+* Removed deprecated `func` package
+
 ## 2.0.0
 
 * Removed `functions` package in favour of [func](https://pub.dartlang.org/packages/func)
