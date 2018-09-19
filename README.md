@@ -18,7 +18,7 @@ This video by Scott Wlaschin will inspire you on how to apply DDD:
 [Domain Driven Design, F# and Types](https://skillsmatter.com/skillscasts/4971-domain-driven-design-with-scott-wlaschin)
 
 ## USAGE
-The following example project: [MVI Sealed Unions](https://github.com/flutterconsortium/mvi_sealed_unions) demonstrates the library application in a Flutter app.
+The following example project: [MVI Sealed Unions](https://github.com/fluttercommunity/mvi_sealed_unions) demonstrates the library application in a Flutter app.
 
 ## INSTALLING
 #### 1. Depend on it
@@ -26,7 +26,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sealed_unions: "^2.0.0"
+  sealed_unions: "^3.0.0"
 ```
 
 #### 2.Install it
@@ -52,7 +52,7 @@ import 'package:sealed_unions/union_4.dart';
 # License
 ![FCLogo][FCLogo]
 
-Copyright (c) flutterconsortium 2018
+Copyright (c) fluttercommunity 2018
 
 The Apache Software License, Version 2.0
 
