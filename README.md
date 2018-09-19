@@ -58,4 +58,4 @@ The Apache Software License, Version 2.0
 
 See LICENSE.md
 
-[FCLogo]:https://raw.githubusercontent.com/flutterconsortium/dart_sealed_unions/master/art/FlutterConsortium.png
+[FCLogo]:https://raw.githubusercontent.com/fluttercommunity/dart_sealed_unions/master/art/FlutterCommunity.png
