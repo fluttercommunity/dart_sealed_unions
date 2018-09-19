@@ -1,4 +1,3 @@
-import 'package:func/func.dart';
 import 'package:tennis_game_example/advantage.dart';
 import 'package:tennis_game_example/deuce.dart';
 import 'package:tennis_game_example/game.dart';
@@ -16,7 +15,7 @@ class TennisGame {
           scoreGame(player)
       );
 
-  static Func1<Points, Score> scorePoints(final Player player) =>
+  static Score Function(Points) scorePoints(final Player player) =>
           (points) {
         if (isPlayerForty(points.first)) {
           return player.getPlayer().join(
@@ -73,7 +72,7 @@ class TennisGame {
               (forty) => throw new StateError("illegal point")
       );
 
-  static Func1<Advantage, Score> scoreAdvantage(final Player player) {
+  static Score Function(Advantage) scoreAdvantage(final Player player) {
     return (advantage) =>
         advantage.getPlayer().join(
                 (playerOne) =>
@@ -87,14 +86,14 @@ class TennisGame {
                         (playerTwo) => new Score.game(new Game.two())));
   }
 
-  static Func1<Deuce, Score> scoreDeuce(final Player player) {
+  static Score Function(Deuce) scoreDeuce(final Player player) {
     return (deuce) =>
         player.getPlayer().join(
                 (playerOne) => new Score.advantage(new Advantage.one()),
                 (playerTwo) => new Score.advantage(new Advantage.two()));
   }
 
-  static Func1<Game, Score> scoreGame(final Player player) {
+  static Score Function(Game) scoreGame(final Player player) {
     return (game) =>
         player.getPlayer().join(
                 (playerOne) =>

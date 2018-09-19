@@ -8,8 +8,7 @@ import 'package:sealed_unions/factories/septet_factory.dart';
 import 'package:sealed_unions/factories/sextet_factory.dart';
 import 'package:sealed_unions/factories/singlet_factory.dart';
 import 'package:sealed_unions/factories/triplet_factory.dart';
-import 'package:test/test.dart'
-    hide Func0, Func1, Func2, Func3, Func4, Func5, Func6;
+import 'package:test/test.dart';
 
 const String VALID = "a";
 const String INVALID = "";
@@ -29,20 +28,20 @@ const List<String> VALID_ARRAY = const [
 final String Function(int) VALUE = (a) => VALID;
 final String Function(int) EMPTY = (a) => INVALID;
 final Function(int) SUCCESS = (i) => "Success";
-final Function(int) ERROR = (i) => new StateError("");
+final Function(int) ERROR = (i) => StateError("");
 
 void main() {
   group('Union Factories => test join ', () {
-    Nullet<int> nullet = new Nullet();
-    Singlet<int> singlet = new Singlet();
-    Doublet<int, int> doublet = new Doublet();
-    Triplet<int, int, int> triplet = new Triplet();
-    Quartet<int, int, int, int> quartet = new Quartet();
-    Quintet<int, int, int, int, int> quintet = new Quintet();
-    Sextet<int, int, int, int, int, int> sextet = new Sextet();
-    Septet<int, int, int, int, int, int, int> septet = new Septet();
-    Octet<int, int, int, int, int, int, int, int> octet = new Octet();
-    Nonet<int, int, int, int, int, int, int, int, int> nonet = new Nonet();
+    Nullet<int> nullet = Nullet();
+    Singlet<int> singlet = Singlet();
+    Doublet<int, int> doublet = Doublet();
+    Triplet<int, int, int> triplet = Triplet();
+    Quartet<int, int, int, int> quartet = Quartet();
+    Quintet<int, int, int, int, int> quintet = Quintet();
+    Sextet<int, int, int, int, int, int> sextet = Sextet();
+    Septet<int, int, int, int, int, int, int> septet = Septet();
+    Octet<int, int, int, int, int, int, int, int> octet = Octet();
+    Nonet<int, int, int, int, int, int, int, int, int> nonet = Nonet();
 
     String join0 = nullet.first(0).join(VALUE);
     String join1 = singlet.first(0).join(VALUE, () => INVALID);
@@ -279,16 +278,16 @@ void main() {
   });
 
   group('Union Factories => test continued ', () {
-    Nullet<int> nullet = new Nullet();
-    Singlet<int> singlet = new Singlet();
-    Doublet<int, int> doublet = new Doublet();
-    Triplet<int, int, int> triplet = new Triplet();
-    Quartet<int, int, int, int> quartet = new Quartet();
-    Quintet<int, int, int, int, int> quintet = new Quintet();
-    Sextet<int, int, int, int, int, int> sextet = new Sextet();
-    Septet<int, int, int, int, int, int, int> septet = new Septet();
-    Octet<int, int, int, int, int, int, int, int> octet = new Octet();
-    Nonet<int, int, int, int, int, int, int, int, int> nonet = new Nonet();
+    Nullet<int> nullet = Nullet();
+    Singlet<int> singlet = Singlet();
+    Doublet<int, int> doublet = Doublet();
+    Triplet<int, int, int> triplet = Triplet();
+    Quartet<int, int, int, int> quartet = Quartet();
+    Quintet<int, int, int, int, int> quintet = Quintet();
+    Sextet<int, int, int, int, int, int> sextet = Sextet();
+    Septet<int, int, int, int, int, int, int> septet = Septet();
+    Octet<int, int, int, int, int, int, int, int> octet = Octet();
+    Nonet<int, int, int, int, int, int, int, int, int> nonet = Nonet();
 
     nullet.first(0).continued(SUCCESS);
     singlet.first(0).continued(SUCCESS, () {});

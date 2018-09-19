@@ -1,4 +1,3 @@
-import 'package:func/func.dart';
 import 'package:sealed_unions/factories/quartet_factory.dart';
 import 'package:sealed_unions/union_4.dart';
 import 'package:tennis_game_example/advantage.dart';
@@ -13,23 +12,23 @@ abstract class Score {
 
   factory Score.points(final PlayerPoints playerOnePoints,
       final PlayerPoints playerTwoPoints) =>
-      new _Score(() =>
-          new Quartet<Points, Advantage, Deuce, Game>()
-              .first(new Points(playerOnePoints, playerTwoPoints)));
+      _Score(() =>
+          Quartet<Points, Advantage, Deuce, Game>()
+              .first(Points(playerOnePoints, playerTwoPoints)));
 
   factory Score.advantage(final Advantage advantage) =>
-      new _Score(() =>
-          new Quartet<Points, Advantage, Deuce, Game>()
+      _Score(() =>
+          Quartet<Points, Advantage, Deuce, Game>()
               .second(advantage));
 
   factory Score.deuce() =>
-      new _Score(() =>
-          new Quartet<Points, Advantage, Deuce, Game>()
-              .third(new Deuce()));
+      _Score(() =>
+          Quartet<Points, Advantage, Deuce, Game>()
+              .third(Deuce()));
 
   factory Score.game(final Game game) =>
-      new _Score(() =>
-          new Quartet<Points, Advantage, Deuce, Game>()
+      _Score(() =>
+          Quartet<Points, Advantage, Deuce, Game>()
               .fourth(game));
 
   static String getString(Score score) {
@@ -38,10 +37,10 @@ abstract class Score {
         mapGameString());
   }
 
-  static Func1<Points, String> mapScoreString() =>
+  static String Function(Points) mapScoreString() =>
           (points) => points.toString();
 
-  static Func1<Advantage, String> mapAdvantageString() =>
+  static String Function(Advantage) mapAdvantageString() =>
           (advantage) =>
           advantage.getPlayer()
               .join(
@@ -49,9 +48,9 @@ abstract class Score {
                   (playerTwo) => "Adv P2"
           );
 
-  static Func1<Deuce, String> mapDeuceString() => (deuce) => "Deuce";
+  static String Function(Deuce) mapDeuceString() => (deuce) => "Deuce";
 
-  static Func1<Game, String> mapGameString() =>
+  static String Function(Game) mapGameString() =>
           (game) =>
           game.getPlayer()
               .join(
@@ -65,12 +64,11 @@ abstract class Score {
   }
 
   Union4<Points, Advantage, Deuce, Game> getScore();
-
 }
 
 class _Score extends Score {
 
-  Func0<Union4<Points, Advantage, Deuce, Game>> _getScore;
+  Union4<Points, Advantage, Deuce, Game> Function() _getScore;
 
   _Score(this._getScore);
 
