@@ -15,14 +15,11 @@ abstract class Factory1<Result> {
 }
 
 class Singlet<Result> implements Factory1<Result> {
-
   const Singlet();
 
   @override
   Union1<Result> first(Result result) => new Union1First<Result>(result);
 
-
   @override
   Union1<Result> none() => new Union1None<Result>();
-
 }

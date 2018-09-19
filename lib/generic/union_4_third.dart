@@ -1,4 +1,3 @@
-import 'package:func/func.dart';
 import 'package:sealed_unions/union_4.dart';
 
 class Union4Third<A, B, C, D> implements Union4<A, B, C, D> {
@@ -8,20 +7,20 @@ class Union4Third<A, B, C, D> implements Union4<A, B, C, D> {
 
   @override
   void continued(
-    VoidFunc1<A> continuationFirst,
-    VoidFunc1<B> continuationSecond,
-    VoidFunc1<C> continuationThird,
-    VoidFunc1<D> continuationFourth,
+    Function(A) continuationFirst,
+    Function(B) continuationSecond,
+    Function(C) continuationThird,
+    Function(D) continuationFourth,
   ) {
     continuationThird(_value);
   }
 
   @override
   R join<R>(
-    Func1<A, R> mapFirst,
-    Func1<B, R> mapSecond,
-    Func1<C, R> mapThird,
-    Func1<D, R> mapFourth,
+    R Function(A) mapFirst,
+    R Function(B) mapSecond,
+    R Function(C) mapThird,
+    R Function(D) mapFourth,
   ) {
     return mapThird(_value);
   }

@@ -10,7 +10,6 @@ import 'package:sealed_unions/union_8.dart';
 
 // Creator class for Union8
 abstract class Factory8<A, B, C, D, E, F, G, H> {
-
   Union8<A, B, C, D, E, F, G, H> first(A first);
 
   Union8<A, B, C, D, E, F, G, H> second(B second);
@@ -26,11 +25,10 @@ abstract class Factory8<A, B, C, D, E, F, G, H> {
   Union8<A, B, C, D, E, F, G, H> seventh(G seventh);
 
   Union8<A, B, C, D, E, F, G, H> eighth(H eighth);
-
 }
 
-class Octet<A, B, C, D, E, F, G, H> implements Factory8<A, B, C, D, E, F, G, H> {
-
+class Octet<A, B, C, D, E, F, G, H>
+    implements Factory8<A, B, C, D, E, F, G, H> {
   const Octet();
 
   @override
@@ -64,5 +62,4 @@ class Octet<A, B, C, D, E, F, G, H> implements Factory8<A, B, C, D, E, F, G, H> 
   @override
   Union8<A, B, C, D, E, F, G, H> eighth(H eighth) =>
       new Union8Eighth<A, B, C, D, E, F, G, H>(eighth);
-
 }

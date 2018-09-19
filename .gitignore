@@ -11,3 +11,6 @@ pubspec.lock
 *.iml
 /coverage/
 *.log
+.dart_tool/
+android/
+ios/

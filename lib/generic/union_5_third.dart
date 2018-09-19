@@ -1,4 +1,3 @@
-import 'package:func/func.dart';
 import 'package:sealed_unions/union_5.dart';
 
 class Union5Third<A, B, C, D, E> implements Union5<A, B, C, D, E> {
@@ -8,22 +7,22 @@ class Union5Third<A, B, C, D, E> implements Union5<A, B, C, D, E> {
 
   @override
   void continued(
-    VoidFunc1<A> continuationFirst,
-    VoidFunc1<B> continuationSecond,
-    VoidFunc1<C> continuationThird,
-    VoidFunc1<D> continuationFourth,
-    VoidFunc1<E> continuationFifth,
+    Function(A) continuationFirst,
+    Function(B) continuationSecond,
+    Function(C) continuationThird,
+    Function(D) continuationFourth,
+    Function(E) continuationFifth,
   ) {
     continuationThird(_value);
   }
 
   @override
   R join<R>(
-    Func1<A, R> mapFirst,
-    Func1<B, R> mapSecond,
-    Func1<C, R> mapThird,
-    Func1<D, R> mapFourth,
-    Func1<E, R> mapFifth,
+    R Function(A) mapFirst,
+    R Function(B) mapSecond,
+    R Function(C) mapThird,
+    R Function(D) mapFourth,
+    R Function(E) mapFifth,
   ) {
     return mapThird(_value);
   }

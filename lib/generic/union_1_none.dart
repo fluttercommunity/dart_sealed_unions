@@ -1,16 +1,15 @@
-import 'package:func/func.dart';
 import 'package:sealed_unions/union_1.dart';
 
 class Union1None<T> implements Union1<T> {
   Union1None();
 
   @override
-  void continued(VoidFunc1<T> continuationFirst, VoidFunc0 continuationNone) {
+  void continued(Function(T) continuationFirst, Function() continuationNone) {
     continuationNone();
   }
 
   @override
-  R join<R>(Func1<T, R> mapFirst, Func0<R> mapNone) => mapNone();
+  R join<R>(R Function(T) mapFirst, R Function() mapNone) => mapNone();
 
   @override
   bool operator ==(Object other) =>
