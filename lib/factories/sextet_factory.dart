@@ -22,7 +22,7 @@ abstract class Factory6<A, B, C, D, E, F> {
 }
 
 class Sextet<A, B, C, D, E, F> implements Factory6<A, B, C, D, E, F> {
-  Sextet();
+  const Sextet();
 
   @override
   Union6<A, B, C, D, E, F> first(A first) =>
