@@ -26,7 +26,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sealed_unions: "^3.0.0"
+  sealed_unions: "^3.0.2"
 ```
 
 #### 2.Install it
@@ -52,7 +52,7 @@ import 'package:sealed_unions/union_4.dart';
 # License
 ![FCLogo][FCLogo]
 
-Copyright (c) fluttercommunity 2018
+Copyright (c) fluttercommunity 2019
 
 The Apache Software License, Version 2.0
 
