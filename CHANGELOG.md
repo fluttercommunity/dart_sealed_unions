@@ -1,3 +1,7 @@
+## 3.0.2+1
+
+* Updated Authors
+  
 ## 3.0.0
 
 * Support for Dart 2

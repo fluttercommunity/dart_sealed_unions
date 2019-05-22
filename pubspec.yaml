@@ -1,9 +1,9 @@
 name: sealed_unions
 description: Sealed Unions for Dart
-version: 3.0.2
+version: 3.0.2+1
 maintainer: Android Alliance (@droidalliance)
 authors: 
-- Flutter Community <flutter-community@googlegroups.com>
+- Flutter Community <community@flutter.zone>
 - Android Alliance <contact+gh@androidalliance.co.uk>
 homepage: https://github.com/fluttercommunity/dart_sealed_unions
 documentation:
