@@ -1,4 +1,4 @@
-# dart_sealed_unions
+[![Flutter Community: sealed_unions](https://fluttercommunity.dev/_github/header/sealed_unions)](https://github.com/fluttercommunity/community)
 
 ## ACKNOWLEDGEMENTS
 This library is a port of [JavaSealedUnions](https://github.com/pakoito/JavaSealedUnions/blob/master/README.md) originally created by [Francisco](https://github.com/pakoito/) ([Paco](https://github.com/pakoito/)) [Estévez
@@ -26,7 +26,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sealed_unions: "^3.0.2"
+  sealed_unions: "^3.0.2+2"
 ```
 
 #### 2.Install it
@@ -58,4 +58,4 @@ The Apache Software License, Version 2.0
 
 See LICENSE.md
 
-[FCLogo]:https://raw.githubusercontent.com/fluttercommunity/dart_sealed_unions/master/art/FlutterCommunity.png
+[![Flutter Community: sealed_unions](https://fluttercommunity.dev/_github/header/sealed_unions)](https://github.com/fluttercommunity/community)

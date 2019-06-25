@@ -4,7 +4,7 @@ version: 3.0.2+1
 maintainer: Android Alliance (@droidalliance)
 authors: 
 - Flutter Community <community@flutter.zone>
-- Android Alliance <contact+gh@androidalliance.co.uk>
+- George Medve <contact+gh@androidalliance.co.uk>
 homepage: https://github.com/fluttercommunity/dart_sealed_unions
 documentation:
 environment:
