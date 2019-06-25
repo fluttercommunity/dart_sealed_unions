@@ -50,8 +50,6 @@ import 'package:sealed_unions/union_4.dart';
 ```
 
 # License
-![FCLogo][FCLogo]
-
 Copyright (c) fluttercommunity 2019
 
 The Apache Software License, Version 2.0
