@@ -1,6 +1,6 @@
 name: sealed_unions
 description: Sealed Unions for Dart
-version: 3.0.2+1
+version: 3.0.2+2
 maintainer: George Medve (@nodinosaur)
 authors: 
 - Flutter Community <community@flutter.zone>
