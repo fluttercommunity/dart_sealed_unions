@@ -1,3 +1,7 @@
+## 3.0.2+2
+
+* Added Flutter Community banner
+
 ## 3.0.2+1
 
 * Updated Authors
