@@ -11,21 +11,29 @@ class Union3Impl<A, B, C> implements Union3<A, B, C> {
     Function(B) continuationSecond,
     Function(C) continuationThird,
   ) {
-    _union.continued(continuationFirst, continuationSecond, continuationThird);
+    _union.continued(
+      continuationFirst,
+      continuationSecond,
+      continuationThird,
+    );
   }
 
   @override
   R join<R>(
-      R Function(A) mapFirst, R Function(B) mapSecond, R Function(C) mapThird) {
-    return _union.join(mapFirst, mapSecond, mapThird);
+    R Function(A) mapFirst,
+    R Function(B) mapSecond,
+    R Function(C) mapThird,
+  ) {
+    return _union.join(
+      mapFirst,
+      mapSecond,
+      mapThird,
+    );
   }
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union3Impl &&
-          runtimeType == other.runtimeType &&
-          _union == other._union;
+      identical(this, other) || other is Union3Impl && runtimeType == other.runtimeType && _union == other._union;
 
   @override
   int get hashCode => _union.hashCode;

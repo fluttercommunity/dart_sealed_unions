@@ -1,15 +1,12 @@
 name: tennis_game_example
 description: A [Tennis kata](http://www.codingdojo.org/cgi-bin/index.pl?KataTennis) example.
 
-dependencies:
-  sealed_unions: ^3.0.0
-
-dependency_overrides:
-  sealed_unions:
-    path: ../
-
 environment:
-  sdk: '>=2.0.0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
 
 dev_dependencies:
-  test: "^1.3.3"
+  sealed_unions:
+    path: ../
+  test: ^1.16.8

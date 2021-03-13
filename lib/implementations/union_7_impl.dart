@@ -15,34 +15,25 @@ class Union7Impl<A, B, C, D, E, F, G> implements Union7<A, B, C, D, E, F, G> {
       Function(F) continuationSixth,
       Function(G) continuationSeventh) {
     _union.continued(
-        continuationFirst,
-        continuationSecond,
-        continuationThird,
-        continuationFourth,
-        continuationFifth,
-        continuationSixth,
-        continuationSeventh);
+      continuationFirst,
+      continuationSecond,
+      continuationThird,
+      continuationFourth,
+      continuationFifth,
+      continuationSixth,
+      continuationSeventh,
+    );
   }
 
   @override
-  R join<R>(
-      R Function(A) mapFirst,
-      R Function(B) mapSecond,
-      R Function(C) mapThird,
-      R Function(D) mapFourth,
-      R Function(E) mapFifth,
-      R Function(F) mapSixth,
-      R Function(G) mapSeventh) {
-    return _union.join(mapFirst, mapSecond, mapThird, mapFourth, mapFifth,
-        mapSixth, mapSeventh);
+  R join<R>(R Function(A) mapFirst, R Function(B) mapSecond, R Function(C) mapThird, R Function(D) mapFourth,
+      R Function(E) mapFifth, R Function(F) mapSixth, R Function(G) mapSeventh) {
+    return _union.join(mapFirst, mapSecond, mapThird, mapFourth, mapFifth, mapSixth, mapSeventh);
   }
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union7Impl &&
-          runtimeType == other.runtimeType &&
-          _union == other._union;
+      identical(this, other) || other is Union7Impl && runtimeType == other.runtimeType && _union == other._union;
 
   @override
   int get hashCode => _union.hashCode;

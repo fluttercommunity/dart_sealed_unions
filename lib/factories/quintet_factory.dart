@@ -22,19 +22,17 @@ class Quintet<A, B, C, D, E> implements Factory5<A, B, C, D, E> {
   const Quintet();
 
   @override
-  Union5<A, B, C, D, E> first(A first) => new Union5First<A, B, C, D, E>(first);
+  Union5<A, B, C, D, E> first(A first) => Union5First<A, B, C, D, E>(first);
 
   @override
-  Union5<A, B, C, D, E> second(B second) =>
-      new Union5Second<A, B, C, D, E>(second);
+  Union5<A, B, C, D, E> second(B second) => Union5Second<A, B, C, D, E>(second);
 
   @override
-  Union5<A, B, C, D, E> third(C third) => new Union5Third<A, B, C, D, E>(third);
+  Union5<A, B, C, D, E> third(C third) => Union5Third<A, B, C, D, E>(third);
 
   @override
-  Union5<A, B, C, D, E> fourth(D fourth) =>
-      new Union5Fourth<A, B, C, D, E>(fourth);
+  Union5<A, B, C, D, E> fourth(D fourth) => Union5Fourth<A, B, C, D, E>(fourth);
 
   @override
-  Union5<A, B, C, D, E> fifth(E fifth) => new Union5Fifth<A, B, C, D, E>(fifth);
+  Union5<A, B, C, D, E> fifth(E fifth) => Union5Fifth<A, B, C, D, E>(fifth);
 }

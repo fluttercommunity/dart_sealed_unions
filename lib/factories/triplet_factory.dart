@@ -16,11 +16,11 @@ class Triplet<T, U, V> implements Factory3<T, U, V> {
   const Triplet();
 
   @override
-  Union3<T, U, V> first(T first) => new Union3First<T, U, V>(first);
+  Union3<T, U, V> first(T first) => Union3First<T, U, V>(first);
 
   @override
-  Union3<T, U, V> second(U second) => new Union3Second<T, U, V>(second);
+  Union3<T, U, V> second(U second) => Union3Second<T, U, V>(second);
 
   @override
-  Union3<T, U, V> third(V third) => new Union3Third<T, U, V>(third);
+  Union3<T, U, V> third(V third) => Union3Third<T, U, V>(third);
 }

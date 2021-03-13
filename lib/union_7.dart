@@ -1,12 +1,13 @@
 abstract class Union7<First, Second, Third, Fourth, Fifth, Sixth, Seventh> {
   void continued(
-      Function(First) continuationFirst,
-      Function(Second) continuationSecond,
-      Function(Third) continuationThird,
-      Function(Fourth) continuationFourth,
-      Function(Fifth) continuationFifth,
-      Function(Sixth) continuationSixth,
-      Function(Seventh) continuationSeventh);
+    Function(First) continuationFirst,
+    Function(Second) continuationSecond,
+    Function(Third) continuationThird,
+    Function(Fourth) continuationFourth,
+    Function(Fifth) continuationFifth,
+    Function(Sixth) continuationSixth,
+    Function(Seventh) continuationSeventh,
+  );
 
   R join<R>(
     R Function(First) mapFirst,

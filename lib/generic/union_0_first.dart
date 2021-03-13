@@ -15,10 +15,7 @@ class Union0First<T> implements Union0<T> {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union0First &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union0First && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;

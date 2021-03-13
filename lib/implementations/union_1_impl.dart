@@ -6,21 +6,30 @@ class Union1Impl<A> implements Union1<A> {
   Union1Impl(Union1<A> union) : _union = union;
 
   @override
-  void continued(Function(A) continuationFirst, Function() continuationNone) {
-    _union.continued(continuationFirst, continuationNone);
+  void continued(
+    Function(A) continuationFirst,
+    Function() continuationNone,
+  ) {
+    _union.continued(
+      continuationFirst,
+      continuationNone,
+    );
   }
 
   @override
-  R join<R>(R Function(A) mapFirst, R Function() mapNone) {
-    return _union.join(mapFirst, mapNone);
+  R join<R>(
+    R Function(A) mapFirst,
+    R Function() mapNone,
+  ) {
+    return _union.join(
+      mapFirst,
+      mapNone,
+    );
   }
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union1Impl &&
-          runtimeType == other.runtimeType &&
-          _union == other._union;
+      identical(this, other) || other is Union1Impl && runtimeType == other.runtimeType && _union == other._union;
 
   @override
   int get hashCode => _union.hashCode;

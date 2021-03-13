@@ -4,5 +4,8 @@ abstract class Union1<First> {
     Function() continuationNone,
   );
 
-  R join<R>(R Function(First) mapFirst, R Function() mapNone);
+  R join<R>(
+    R Function(First) mapFirst,
+    R Function() mapNone,
+  );
 }

@@ -19,14 +19,14 @@ class Quartet<A, B, C, D> implements Factory4<A, B, C, D> {
   const Quartet();
 
   @override
-  Union4<A, B, C, D> first(A first) => new Union4First<A, B, C, D>(first);
+  Union4<A, B, C, D> first(A first) => Union4First<A, B, C, D>(first);
 
   @override
-  Union4<A, B, C, D> second(B second) => new Union4Second<A, B, C, D>(second);
+  Union4<A, B, C, D> second(B second) => Union4Second<A, B, C, D>(second);
 
   @override
-  Union4<A, B, C, D> third(C third) => new Union4Third<A, B, C, D>(third);
+  Union4<A, B, C, D> third(C third) => Union4Third<A, B, C, D>(third);
 
   @override
-  Union4<A, B, C, D> fourth(D fourth) => new Union4Fourth<A, B, C, D>(fourth);
+  Union4<A, B, C, D> fourth(D fourth) => Union4Fourth<A, B, C, D>(fourth);
 }
