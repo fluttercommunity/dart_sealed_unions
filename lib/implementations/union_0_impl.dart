@@ -17,10 +17,7 @@ class Union0Impl<A> implements Union0<A> {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union0Impl &&
-          runtimeType == other.runtimeType &&
-          _union == other._union;
+      identical(this, other) || other is Union0Impl && runtimeType == other.runtimeType && _union == other._union;
 
   @override
   int get hashCode => _union.hashCode;

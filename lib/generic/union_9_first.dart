@@ -1,7 +1,6 @@
 import 'package:sealed_unions/union_9.dart';
 
-class Union9First<A, B, C, D, E, F, G, H, I>
-    implements Union9<A, B, C, D, E, F, G, H, I> {
+class Union9First<A, B, C, D, E, F, G, H, I> implements Union9<A, B, C, D, E, F, G, H, I> {
   final A _value;
 
   Union9First(this._value);
@@ -38,10 +37,7 @@ class Union9First<A, B, C, D, E, F, G, H, I>
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union9First &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union9First && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;

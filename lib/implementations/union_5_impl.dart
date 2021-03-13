@@ -13,22 +13,35 @@ class Union5Impl<A, B, C, D, E> implements Union5<A, B, C, D, E> {
     Function(D) continuationFourth,
     Function(E) continuationFifth,
   ) {
-    _union.continued(continuationFirst, continuationSecond, continuationThird,
-        continuationFourth, continuationFifth);
+    _union.continued(
+      continuationFirst,
+      continuationSecond,
+      continuationThird,
+      continuationFourth,
+      continuationFifth,
+    );
   }
 
   @override
-  R join<R>(R Function(A) mapFirst, R Function(B) mapSecond,
-      R Function(C) mapThird, R Function(D) mapFourth, R Function(E) mapFifth) {
-    return _union.join(mapFirst, mapSecond, mapThird, mapFourth, mapFifth);
+  R join<R>(
+    R Function(A) mapFirst,
+    R Function(B) mapSecond,
+    R Function(C) mapThird,
+    R Function(D) mapFourth,
+    R Function(E) mapFifth,
+  ) {
+    return _union.join(
+      mapFirst,
+      mapSecond,
+      mapThird,
+      mapFourth,
+      mapFifth,
+    );
   }
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union5Impl &&
-          runtimeType == other.runtimeType &&
-          _union == other._union;
+      identical(this, other) || other is Union5Impl && runtimeType == other.runtimeType && _union == other._union;
 
   @override
   int get hashCode => _union.hashCode;

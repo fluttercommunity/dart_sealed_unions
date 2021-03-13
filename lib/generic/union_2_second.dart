@@ -14,15 +14,11 @@ class Union2Second<T, U> implements Union2<T, U> {
   }
 
   @override
-  R join<R>(R Function(T) mapFirst, R Function(U) mapSecond) =>
-      mapSecond(_value);
+  R join<R>(R Function(T) mapFirst, R Function(U) mapSecond) => mapSecond(_value);
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union2Second &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union2Second && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;

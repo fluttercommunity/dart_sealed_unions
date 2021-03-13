@@ -27,10 +27,7 @@ class Union4Third<A, B, C, D> implements Union4<A, B, C, D> {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union4Third &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union4Third && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;

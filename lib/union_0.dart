@@ -7,7 +7,7 @@ abstract class Union0<First> {
   /// Executes one of the continuations depending on the element type
   void continued(Function(First) continuationFirst);
 
-  /// Transforms the element in the union to a new type
+  /// Transforms the element in the union to a new Type
   ///
   /// @param <R> result type
   /// @return an object of the result type

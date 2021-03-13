@@ -12,9 +12,7 @@ class Union1None<T> implements Union1<T> {
   R join<R>(R Function(T) mapFirst, R Function() mapNone) => mapNone();
 
   @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union1None && runtimeType == other.runtimeType;
+  bool operator ==(Object other) => identical(this, other) || other is Union1None && runtimeType == other.runtimeType;
 
   @override
   int get hashCode => 0;

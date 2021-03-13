@@ -1,7 +1,6 @@
 import 'package:sealed_unions/union_8.dart';
 
-class Union8Second<A, B, C, D, E, F, G, H>
-    implements Union8<A, B, C, D, E, F, G, H> {
+class Union8Second<A, B, C, D, E, F, G, H> implements Union8<A, B, C, D, E, F, G, H> {
   final B _value;
 
   Union8Second(this._value);
@@ -36,10 +35,7 @@ class Union8Second<A, B, C, D, E, F, G, H>
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union8Second &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union8Second && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;

@@ -29,10 +29,7 @@ class Union5Fourth<A, B, C, D, E> implements Union5<A, B, C, D, E> {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union5Fourth &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union5Fourth && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;

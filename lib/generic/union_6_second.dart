@@ -31,10 +31,7 @@ class Union6Second<A, B, C, D, E, F> implements Union6<A, B, C, D, E, F> {
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Union6Second &&
-          runtimeType == other.runtimeType &&
-          _value == other._value;
+      identical(this, other) || other is Union6Second && runtimeType == other.runtimeType && _value == other._value;
 
   @override
   int get hashCode => _value.hashCode;
